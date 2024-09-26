@@ -1,4 +1,4 @@
-import eslintConfig from '@repo/eslint-config/react.js';
+import eslintConfig from './node.js';
 
 // eslint-disable-next-line import/no-default-export
 export default eslintConfig;

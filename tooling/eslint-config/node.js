@@ -1,18 +1,18 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
-import harrisConfig from 'eslint-config-harris';
+import harrisBaseConfig from 'eslint-config-harris/base';
 import globals from 'globals';
 
 import commonConfig from './common.js';
 
 /** @type {import('eslint').Linter.Config[]} */
 const eslintConfig = [
-  ...harrisConfig,
+  ...harrisBaseConfig,
   ...commonConfig,
   {
-    name: 'repo/react',
+    name: 'repo/node',
     languageOptions: {
       globals: {
-        ...globals.browser,
+        ...globals.nodeBuiltin,
       },
     },
   },

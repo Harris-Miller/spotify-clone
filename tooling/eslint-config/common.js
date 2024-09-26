@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys-fix/sort-keys-fix */
+
 /** @type {import('eslint').Linter.Config[]} */
 const eslintConfig = [
   {
