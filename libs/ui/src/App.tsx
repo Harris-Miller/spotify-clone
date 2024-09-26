@@ -2,8 +2,6 @@ import { useState } from 'react';
 
 // eslint-disable-next-line import/no-unresolved
 import viteLogo from '/vite.svg';
-// eslint-disable-next-line import/no-unresolved
-import electronLogo from '/electron.svg';
 
 import reactLogo from './assets/react.svg';
 
@@ -21,11 +19,8 @@ const App = () => {
         <a href="https://react.dev" rel="noreferrer" target="_blank">
           <img alt="React logo" className="logo react" src={reactLogo} />
         </a>
-        <a href="https://electronjs.org" rel="noreferrer" target="_blank">
-          <img alt="Electron logo" className="logo electron" src={electronLogo} />
-        </a>
       </div>
-      <h1>Vite + React + Electron</h1>
+      <h1>Vite + React</h1>
       <div className="card">
         <button
           onClick={() => {
