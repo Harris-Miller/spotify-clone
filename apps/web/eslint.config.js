@@ -18,7 +18,7 @@ const eslintConfig = [
     },
   },
   {
-    ignores: ['node_modules/', 'dist/'],
+    ignores: ['dist'],
   },
 ];
 
