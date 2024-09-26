@@ -1,0 +1,15 @@
+{
+  "name": "@repo/eslint-config",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "react.js"
+  ],
+  "devDependencies": {
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-config-harris": "^4.1.1",
+    "typescript": "^5.3.3"
+  }
+}
