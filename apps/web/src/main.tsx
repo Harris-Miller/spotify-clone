@@ -1,4 +1,4 @@
-import App from '@repo/ui/src/App';
+import App from '@repo/ui/App';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 

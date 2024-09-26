@@ -21,10 +21,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
     "paths": {
       // alias absolute paths to public dir
       "/*": [
         "./public/*"
+      ],
+      "@repo/ui/*": [
+        "../../libs/ui/src/*"
       ]
     }
   },

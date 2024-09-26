@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { useState } from 'react';
 
 // eslint-disable-next-line import/no-unresolved
@@ -7,7 +8,7 @@ import reactLogo from './assets/react.svg';
 
 import './App.css';
 
-const App = () => {
+const App: FC = () => {
   const [count, setCount] = useState(0);
 
   return (
