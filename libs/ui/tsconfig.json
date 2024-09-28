@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "paths": {
-      // alias absolute paths to public dir
+      // alias absolute paths to public dir - TODO: fix this
       "/*": [
         "./public/*"
       ]
