@@ -1,5 +1,18 @@
 import { Home as HomeIcon, Menu as MenuIcon, More as MoreIcon, Search as SearchIcon } from '@mui/icons-material';
-import { AppBar, Box, Button, Container, IconButton, Toolbar, Typography } from '@mui/material';
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  FormControl,
+  Grid2 as Grid,
+  IconButton,
+  Input,
+  InputAdornment,
+  Paper,
+  Toolbar,
+  Typography,
+} from '@mui/material';
 import type { FC } from 'react';
 import { useState } from 'react';
 
@@ -7,7 +20,6 @@ import { useState } from 'react';
 import viteLogo from '/vite.svg';
 
 import reactLogo from './assets/react.svg';
-import './App.css';
 import { ThemeProvider } from './ThemeProvider.js';
 
 const App: FC = () => {
@@ -26,35 +38,52 @@ const App: FC = () => {
             <Button size="large" variant="contained">
               <HomeIcon />
             </Button>
+            <FormControl variant="outlined">
+              <Input
+                placeholder="What do you want to play?"
+                startAdornment={
+                  <InputAdornment position="start">
+                    <SearchIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
           </Box>
           <Box>End</Box>
         </Toolbar>
       </AppBar>
       <Toolbar className="toolbar-spacer" />
-      <Container>
-        <div>
-          <a href="https://vitejs.dev" rel="noreferrer" target="_blank">
-            <img alt="Vite logo" className="logo" src={viteLogo} />
-          </a>
-          <a href="https://react.dev" rel="noreferrer" target="_blank">
-            <img alt="React logo" className="logo react" src={reactLogo} />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button
-            onClick={() => {
-              setCount(c => c + 1);
-            }}
-            type="button"
-          >
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <Container maxWidth={false}>
+        <Grid container>
+          <Grid size={3}>
+            <Paper>Left Col</Paper>
+          </Grid>
+          <Grid size={9}>
+            <div>
+              <a href="https://vitejs.dev" rel="noreferrer" target="_blank">
+                <img alt="Vite logo" className="logo" src={viteLogo} />
+              </a>
+              <a href="https://react.dev" rel="noreferrer" target="_blank">
+                <img alt="React logo" className="logo react" src={reactLogo} />
+              </a>
+            </div>
+            <h1>Vite + React</h1>
+            <div className="card">
+              <button
+                onClick={() => {
+                  setCount(c => c + 1);
+                }}
+                type="button"
+              >
+                count is {count}
+              </button>
+              <p>
+                Edit <code>src/App.tsx</code> and save to test HMR
+              </p>
+            </div>
+            <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+          </Grid>
+        </Grid>
       </Container>
       <Toolbar className="toolbar-spacer" />
       <AppBar color="primary" position="fixed" sx={{ bottom: 0, top: 'auto' }}>
